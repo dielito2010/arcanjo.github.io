@@ -12,6 +12,7 @@
       integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
       crossorigin="anonymous"
     />
+    <link rel="stylesheet" href="assets/css/style.css" />
   </head>
   <body>
     <script
@@ -20,39 +21,93 @@
       crossorigin="anonymous"
     ></script>
     <div
-      id="carouselExampleAutoplaying"
-      class="carousel slide"
-      data-bs-ride="carousel"
+      class="myBackground"
+      style="background-image: url(assets/img/PAPEL+PAREDE+CELULAR.png)"
     >
-      <div class="carousel-inner">
-        <div class="carousel-item active">
-          <img src="assets/img/contbil1.jpg" class="d-block w-100" alt="..." />
+      <!--Carrocel de imagens-->
+      <div
+        id="carouselExampleAutoplaying"
+        class="carousel slide"
+        data-bs-ride="carousel"
+      >
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img
+              src="assets/img/ASSINATURA+DE+E-MAIL.png"
+              class="d-block w-100"
+              alt="..."
+            />
+          </div>
+          <div class="carousel-item">
+            <img
+              src="assets/img/ASSINATURA+DE+E-MAIL.png"
+              class="d-block w-100"
+              alt="..."
+            />
+          </div>
+          <div class="carousel-item">
+            <img
+              src="assets/img/ASSINATURA+DE+E-MAIL.png"
+              class="d-block w-100"
+              alt="..."
+            />
+          </div>
         </div>
-        <div class="carousel-item">
-          <img src="assets/img/contbil2.jpg" class="d-block w-100" alt="..." />
-        </div>
-        <div class="carousel-item">
-          <img src="assets/img/contbil3.jpg" class="d-block w-100" alt="..." />
-        </div>
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#carouselExampleAutoplaying"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#carouselExampleAutoplaying"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
       </div>
-      <button
-        class="carousel-control-prev"
-        type="button"
-        data-bs-target="#carouselExampleAutoplaying"
-        data-bs-slide="prev"
+      <!--Formulário de contato-->
+      <form
+        action=""
+        method="POST"
+        id="formContato"
+        class="col-md-6 offset-md-3 mt-5"
       >
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Previous</span>
-      </button>
-      <button
-        class="carousel-control-next"
-        type="button"
-        data-bs-target="#carouselExampleAutoplaying"
-        data-bs-slide="next"
-      >
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Next</span>
-      </button>
+        <div class="mb-3 text-center">
+          <h2>Entre em contato conosco:</h2>
+          <label for="exampleFormControlInput1" class="form-label"
+            >Seu email:</label
+          >
+          <input
+            type="email"
+            class="form-control"
+            id="exampleFormControlInput1"
+            placeholder="seu-email@exemplo.com"
+          />
+        </div>
+        <div class="mb-3 text-center">
+          <label for="exampleFormControlTextarea1" class="form-label"
+            >Descreva abaixo o que desejar, solicite serviços, envie dúvidas,
+            fique a vontade. Sem dúvida retornaremos com uma resposta:</label
+          >
+          <textarea
+            class="form-control"
+            id="exampleFormControlTextarea1"
+            rows="3"
+          ></textarea>
+        </div>
+        <div class="text-center">
+          <button type="submit" class="btn btn-primary mb-3">Enviar</button>
+        </div>
+      </form>
+      <!--rodapé-->
+      <footer>© 2020 Copyright: Arcanjo Contabilidade</footer>
     </div>
   </body>
 </html>
