@@ -12,6 +12,10 @@
       integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
       crossorigin="anonymous"
     />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css"
+    />
     <link rel="stylesheet" href="assets/css/style.css" />
   </head>
   <body>
@@ -20,89 +24,138 @@
       integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
       crossorigin="anonymous"
     ></script>
-    <!--Carrocel de imagens-->
-    <div
-      id="carouselExampleAutoplaying"
-      class="carousel slide"
-      data-bs-ride="carousel"
+    <!--Barra de navegação-->
+    <nav
+      class="navbar sticky-top"
+      style="background-color: #22354f"
+      id="navbar-example2"
     >
-      <div class="carousel-inner">
-        <div class="carousel-item active">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="index.html">
           <img
-            src="assets/img/ASSINATURA+DE+E-MAIL.png"
-            class="d-block w-100"
-            alt="..."
+            src="assets/img/LOGO+3D+NavBar.png"
+            alt="ArcanjoHome"
+            width="200"
+            height="50"
           />
-        </div>
-        <div class="carousel-item">
-          <img
-            src="assets/img/ASSINATURA+DE+E-MAIL.png"
-            class="d-block w-100"
-            alt="..."
-          />
-        </div>
-        <div class="carousel-item">
-          <img
-            src="assets/img/ASSINATURA+DE+E-MAIL.png"
-            class="d-block w-100"
-            alt="..."
-          />
-        </div>
+        </a>
+        <ul class="nav nav-tabs">
+          <li class="nav-item">
+            <a class="nav-link active" href="#carouselExampleAutoplaying"
+              >Início</a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#sobreNos">Sobre nós</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#servicos">Serviços</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contato">Contato</a>
+          </li>
+        </ul>
       </div>
-      <button
-        class="carousel-control-prev"
-        type="button"
-        data-bs-target="#carouselExampleAutoplaying"
-        data-bs-slide="prev"
+    </nav>
+    <div
+      data-bs-spy="scroll"
+      data-bs-target="#navbar-example2"
+      data-bs-root-margin="0px 0px -40%"
+      data-bs-smooth-scroll="true"
+      class="scrollspy-example bg-body-tertiary p-3 rounded-2"
+      tabindex="0"
+    >
+      <!--Carrocel de imagens-->
+      <div
+        id="carouselExampleAutoplaying"
+        class="carousel slide"
+        data-bs-ride="carousel"
       >
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Previous</span>
-      </button>
-      <button
-        class="carousel-control-next"
-        type="button"
-        data-bs-target="#carouselExampleAutoplaying"
-        data-bs-slide="next"
-      >
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Next</span>
-      </button>
-    </div>
-    <!--Formulário de contato-->
-    <div class="input-group">
-      <iframe
-        src="https://docs.google.com/forms/d/e/1FAIpQLSdu2GkoL8tf8p5sz7omBn62e-c3et_rfUeKvNYlQ46f8CRIKA/viewform?embedded=true"
-        width="100%"
-        height="900"
-        frameborder="0"
-        marginheight="0"
-        marginwidth="0"
-        >Carregando…</iframe
-      >
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img
+              src="assets/img/ASSINATURA+DE+E-MAIL.png"
+              class="d-block w-100"
+              alt="..."
+            />
+          </div>
+          <div class="carousel-item">
+            <img
+              src="assets/img/ASSINATURA+DE+E-MAIL.png"
+              class="d-block w-100"
+              alt="..."
+            />
+          </div>
+          <div class="carousel-item">
+            <img
+              src="assets/img/ASSINATURA+DE+E-MAIL.png"
+              class="d-block w-100"
+              alt="..."
+            />
+          </div>
+        </div>
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#carouselExampleAutoplaying"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#carouselExampleAutoplaying"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+      <div id="sobreNos">
+        <h1>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. At,
+          laboriosam obcaecati. Modi ullam blanditiis aliquam sint non
+          doloremque illo iusto distinctio quos molestias inventore, minus,
+          nulla error. Ipsa, repudiandae aliquam.
+        </h1>
+        <h1>
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugiat omnis
+          pariatur reprehenderit nam hic? Quibusdam, iure laborum! Deleniti
+          nesciunt odio molestiae. Odio quidem omnis reprehenderit sapiente eum
+          explicabo recusandae quae?
+        </h1>
+      </div>
+      <div id="servicos">
+        <h1>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus,
+          enim voluptate nobis sequi vel unde labore necessitatibus distinctio
+          rem aspernatur sapiente voluptas ipsa ipsam minima obcaecati incidunt
+          dolore animi ad.
+        </h1>
+        <h1>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+          Exercitationem, rem. Tempora quas alias aspernatur laudantium.
+          Quisquam at quasi provident, doloribus, architecto consequuntur
+          laboriosam veniam pariatur excepturi corrupti, magni saepe quod.
+        </h1>
+      </div>
+      <!--Formulário de contato-->
+      <div class="input-group" id="contato">
+        <iframe
+          src="https://docs.google.com/forms/d/e/1FAIpQLSdu2GkoL8tf8p5sz7omBn62e-c3et_rfUeKvNYlQ46f8CRIKA/viewform?embedded=true"
+          width="100%"
+          height="900"
+          frameborder="0"
+          marginheight="0"
+          marginwidth="0"
+          >Carregando…</iframe
+        >
+      </div>
     </div>
     <!--rodapé-->
-    <link
-      rel="stylesheet"
-      href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css"
-    />
-    <a
-      href="https://wa.me/5592991385029"
-      style="
-        position: fixed;
-        width: 60px;
-        height: 60px;
-        bottom: 40px;
-        right: 40px;
-        background-color: rgb(61, 143, 45);
-        color: #fff;
-        border-radius: 50px;
-        text-align: center;
-        font-size: 30px;
-        box-shadow: 1px 1px 2px #888;
-        z-index: 1000;
-      "
-      target="_blank"
-    >
+    <a id="linkWhatsapp" href="https://wa.me/5592991385029" target="_blank">
       <i style="margin-top: 16px" class="fa fa-whatsapp"></i>
     </a>
     <footer>© 2020 Copyright: Arcanjo Contabilidade</footer>
