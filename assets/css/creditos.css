@@ -1,0 +1,23 @@
+body {
+	color: white;
+	background-color: #22354f;
+}
+
+a:link {
+	color: red;
+}
+
+/* link que foi visitado */
+a:visited {
+	color: green;
+}
+
+/* mouse over */
+a:hover {
+	color: #000000;
+}
+
+/* link selecionado */
+a:active {
+	color: blue;
+}
