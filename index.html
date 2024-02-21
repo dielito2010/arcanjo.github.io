@@ -1,640 +1,691 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-	<head>
-		<meta charset="UTF-8" />
-		<link rel="icon" type="image/svg+xml" href="assets/svg/contabilidade.svg" />
-		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-		<meta name="viewport" content="width=device-width, initial-scale=1" />
-		<title>Arcanjo Contabilidade</title>
-		<link
-			href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
-			rel="stylesheet"
-			integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
-			crossorigin="anonymous"
-		/>
-		<link
-			rel="stylesheet"
-			href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css"
-		/>
-		<link rel="stylesheet" href="assets/css/style.css" />
-	</head>
-	<body>
-		<script
-			src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
-			integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
-			crossorigin="anonymous"
-		></script>
-		<!--Barra de navegação-->
-		<nav
-			class="navbar sticky-top"
-			style="background-color: #22354f"
-			id="navbar-example2"
-		>
-			<div class="container-fluid">
-				<a class="navbar-brand" href="index.html">
-					<img
-						src="assets/img/LOGO+3D+NavBar.png"
-						alt="ArcanjoHome"
-						width="300"
-						height="100"
-					/>
-				</a>
-				<ul class="nav nav-tabs">
-					<li class="nav-item">
-						<a class="nav-link active" href="#carouselExampleAutoplaying">Home</a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link" href="#sobreNos">Conheça</a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link" href="#servicos">Serviços</a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link" href="#contato">Contato</a>
-					</li>
-				</ul>
-			</div>
-		</nav>
-		<div
-			data-bs-spy="scroll"
-			data-bs-target="#navbar-example2"
-			data-bs-root-margin="0px 0px -40%"
-			data-bs-smooth-scroll="true"
-			class="scrollspy-example bg-body-tertiary p-3 rounded-2"
-			tabindex="0"
-		>
-			<!--Início - Carrocel de imagens-->
-			<div
-				id="carouselExampleAutoplaying"
-				class="carousel slide"
-				data-bs-ride="carousel"
-			>
-				<div class="carousel-inner">
-					<div class="carousel-item active">
-						<a
-							href="https://www.fbc.org.br/agende-se-para-o-xiii-encontro-nacional-da-mulher-contabilista/"
-							target="_blank"
-						>
-							<img
-								src="assets/img/mulherContabil.jpeg"
-								class="d-block w-100"
-								alt="XIII Encontro Nacional da Mulher Contabilista"
-							/>
-						</a>
-					</div>
-					<div class="carousel-item">
-						<a
-							href="https://www.gov.br/receitafederal/pt-br/assuntos/noticias/2022/dezembro/cnpj-passa-por-processo-de-modernizacao"
-							target="_blank"
-						>
-							<img
-								src="assets/img/cnpjReceitaModernizacao.png"
-								class="d-block w-100"
-								alt="CNPJ passa por processo de modernização"
-							/>
-						</a>
-					</div>
-					<div class="carousel-item">
-						<a
-							href="https://www.gov.br/receitafederal/pt-br/assuntos/noticias/2022/dezembro/arrecadacao-federal-alcanca-r-172-038-bilhoes-em-novembro"
-							target="_blank"
-						>
-							<img
-								src="assets/img/arrecadacaoFederal.png"
-								class="d-block w-100"
-								alt="CNPJ passa por processo de modernização"
-							/>
-						</a>
-					</div>
-					<div class="carousel-item">
-						<a
-							href="https://www.gov.br/receitafederal/pt-br/assuntos/noticias/2022/dezembro/abertas-as-inscricoes-para-o-concurso-publico-da-receita-federal"
-							target="_blank"
-						>
-							<img
-								src="assets/img/concursoReceita.png"
-								class="d-block w-100"
-								alt="Abertas as inscrições para o Concurso Público da Receita Federal"
-							/>
-						</a>
-					</div>
-				</div>
-				<button
-					class="carousel-control-prev"
-					type="button"
-					data-bs-target="#carouselExampleAutoplaying"
-					data-bs-slide="prev"
-				>
-					<span class="carousel-control-prev-icon" aria-hidden="true"></span>
-					<span class="visually-hidden">Previous</span>
-				</button>
-				<button
-					class="carousel-control-next"
-					type="button"
-					data-bs-target="#carouselExampleAutoplaying"
-					data-bs-slide="next"
-				>
-					<span class="carousel-control-next-icon" aria-hidden="true"></span>
-					<span class="visually-hidden">Next</span>
-				</button>
-			</div>
-			<!--Sobre nós-->
-			<div class="card mt-5" id="sobreNos" style="max-width: 1200px; margin: auto;">
-				<div class="card-header"><h3>Seja bem vindo!</h3></div>
-				<div class="card-body">
-					<h5 class="card-title text-center mb-5 mt-3">Conheça-nos...</h5>
-					<!--carrocel2-->
-					<div id="carouselExampleFade" class="carousel slide carousel-fade">
-						<div class="carousel-inner">
-							<div class="carousel-item active">
-								<div class="card text-center">
-									<div class="card-body">
-										<h5 class="card-title">
-											Contamos com mais de 17 anos de mercado, atuando no seguimento
-											contábil aqui na capital Manaus e em cidades do interior do estado do
-											Amazonas.
-										</h5>
-										<h6>
-											Partilhamos todas nossas conquistas com nossos clientes, parceiros e
-											colaboradores e juntos formamos a excelência em serviços contábeis.
-										</h6>
-									</div>
-									<img
-										src="assets/img/banner2.jpg"
-										class="card-img-bottom"
-										alt="Clientes/Parceiros"
-									/>
-								</div>
-							</div>
-							<div class="carousel-item">
-								<div class="card text-center">
-									<div class="card-body">
-										<h5 class="card-title">
-											Nossa equipe está pronta para oferecer as ferramentas necessárias
-											para auxiliar sua empresa em seu crescimento financeiro, tributário e
-											fiscal.
-										</h5>
-										<h6>
-											Temos orgulho da nossa sólida experiência, e também orgulho de ter
-											fidelizado grandes parcerias, venha fazer parte desse sucesso e somar
-											conosco.
-										</h6>
-									</div>
-									<img
-										src="assets/img/banner1.jpg"
-										class="card-img-bottom"
-										alt="Clientes/Parceiros"
-									/>
-								</div>
-							</div>
-							<div class="carousel-item">
-								<div class="card text-center">
-									<div class="card-body">
-										<h5 class="card-title">
-											Acreditamos no valor dos relacionamentos duradouros, construídos com
-											base no respeito e na confiança mútua. Por essa razão, agradecemos a
-											confiança em nossa equipe!
-										</h5>
-										<p class="card-text">
-											Ficamos melhores a cada dia no que fazemos graças à qualidade dos
-											serviços prestados. É um prazer colaborar com nossos parceiros. Muito
-											obrigado pela preferência!
-										</p>
-									</div>
-									<img
-										src="assets/img/banner4.png"
-										class="card-img-bottom"
-										alt="Clientes/Parceiros"
-									/>
-								</div>
-							</div>
-						</div>
-						<button
-							class="carousel-control-prev"
-							type="button"
-							data-bs-target="#carouselExampleFade"
-							data-bs-slide="prev"
-						>
-							<span class="carousel-control-prev-icon" aria-hidden="true"></span>
-							<span class="visually-hidden">Previous</span>
-						</button>
-						<button
-							class="carousel-control-next"
-							type="button"
-							data-bs-target="#carouselExampleFade"
-							data-bs-slide="next"
-						>
-							<span class="carousel-control-next-icon" aria-hidden="true"></span>
-							<span class="visually-hidden">Next</span>
-						</button>
-					</div>
-					<!--carrocel2-->
-				</div>
-			</div>
-			<!--fim Sobre nós-->
-			<!--Serviços-->
-			<div class="card mt-5" id="servicos" style="max-width: 1200px; margin: auto;">
-				<div class="card-header"><h3>Serviços<h3></div>
-				<div class="card-body">
-					<h5 class="card-title text-center mb-5 mt-3">
-						Confira nossos principais serviços:
-					</h5>
-					<div class="container text-center">
-						<div class="row align-items-start">
-							<div class="col">
-								<div class="card mb-3 align-items-center" id="card">
-									<img
-										src="assets/img/abertura.jpg"
-										class="card-img-top mt-1"
-										alt="Abertura"
-									/>
-									<p>
-										<button
-											class="btn btn-primary mt-1"
-											type="button"
-											data-bs-toggle="collapse"
-											data-bs-target="#collapseExample"
-											aria-expanded="false"
-											aria-controls="collapseExample"
-										>
-											Abertura e baixa de CNPJ
-										</button>
-									</p>
-									<div class="collapse" id="collapseExample">
-										<div class="card card-body">
-											Um grande desafio na hora de abrir e uma grande dor de cabeça na hora
-											de pedir baixa, já estamos acostumados a essa rotina que exige uma
-											equipe experiente para lidar com a burocracia.
-											<a type="button" class="btn btn-secondary mt-1" href="#contato"
-												>Contate-nos</a
-											>
-										</div>
-									</div>
-								</div>
-							</div>
-							<div class="col">
-								<div class="card mb-3 align-items-center" id="card">
-									<img
-										src="assets/img/departPessoal.jpg"
-										class="card-img-top mt-1"
-										alt="Abertura"
-									/>
-									<p>
-										<button
-											class="btn btn-primary mt-1"
-											type="button"
-											data-bs-toggle="collapse"
-											data-bs-target="#collapseExample1"
-											aria-expanded="false"
-											aria-controls="collapseExample1"
-										>
-											Departamento Pessoal
-										</button>
-									</p>
-									<div class="collapse" id="collapseExample1">
-										<div class="card card-body">
-											Nenhuma empresa pode crescer e prosperar sem contar com um bom DP.
-											Esta área é que garante que a companhia tenha um bom quadro de
-											colaboradores, além de fazer com que eles sintam-se mais satisfeitos,
-											o que no fim das contas, resulta em lucros para a empresa.
-											<a type="button" class="btn btn-secondary mt-1" href="#contato"
-												>Contate-nos</a
-											>
-										</div>
-									</div>
-								</div>
-							</div>
-							<div class="col">
-								<div class="card mb-3 align-items-center" id="card">
-									<img
-										src="assets/img/tributos.jpg"
-										class="card-img-top mt-1"
-										alt="tributos"
-									/>
-									<p>
-										<button
-											class="btn btn-warning mt-1"
-											type="button"
-											data-bs-toggle="collapse"
-											data-bs-target="#collapseExample2"
-											aria-expanded="false"
-											aria-controls="collapseExample2"
-										>
-											Assessoria tributária
-										</button>
-									</p>
-									<div class="collapse" id="collapseExample2">
-										<div class="card card-body">
-											Área que mais exige de uma equipe experiente para atuar de acordo com
-											as legislações vigentes nos órgãos competentes e com a
-											responsabilidade fiscal que a sua empresa ou departamento necessitam.
-											<a type="button" class="btn btn-secondary mt-1" href="#contato"
-												>Contate-nos</a
-											>
-										</div>
-									</div>
-								</div>
-							</div>
-							<div class="col">
-								<div class="card mb-3 align-items-center" id="card">
-									<img
-										src="assets/img/escritura.jpg"
-										class="card-img-top mt-1"
-										alt="tributos"
-									/>
-									<p>
-										<button
-											class="btn btn-secondary mt-1"
-											type="button"
-											data-bs-toggle="collapse"
-											data-bs-target="#collapseExample3"
-											aria-expanded="false"
-											aria-controls="collapseExample3"
-										>
-											Escritura fiscal
-										</button>
-									</p>
-									<div class="collapse" id="collapseExample3">
-										<div class="card card-body">
-											Na contabilidade de uma empresa, a escrituração fiscal é fundamental
-											para a execução da legislação tributária. Sua correta execução
-											permite um crescimento no resultado econômico da organização como um
-											todo.
-											<a type="button" class="btn btn-secondary mt-1" href="#contato"
-												>Contate-nos</a
-											>
-										</div>
-									</div>
-								</div>
-							</div>
-							<div class="col">
-								<div class="card mb-3 align-items-center" id="card">
-									<img
-										src="assets/img/holerite.jpg"
-										class="card-img-top mt-1"
-										alt="tributos"
-									/>
-									<p>
-										<button
-											class="btn btn-secondary mt-1"
-											type="button"
-											data-bs-toggle="collapse"
-											data-bs-target="#collapseExample4"
-											aria-expanded="false"
-											aria-controls="collapseExample4"
-										>
-											Folha de pagamento
-										</button>
-									</p>
-									<div class="collapse" id="collapseExample4">
-										<div class="card card-body">
-											Lista mensal, semanal ou diária da remuneração paga aos colaboradores
-											de uma instituição, também conhecido atigamente como holerite.
-											<a type="button" class="btn btn-secondary mt-1" href="#contato"
-												>Contate-nos</a
-											>
-										</div>
-									</div>
-								</div>
-							</div>
-							<div class="col">
-								<div class="card mb-3 align-items-center" id="card">
-									<img
-										src="assets/img/contabilidade.jpg"
-										class="card-img-top mt-1"
-										alt="tributos"
-									/>
-									<p>
-										<button
-											class="btn btn-primary mt-1"
-											type="button"
-											data-bs-toggle="collapse"
-											data-bs-target="#collapseExample5"
-											aria-expanded="false"
-											aria-controls="collapseExample5"
-										>
-											Contabilidade em geral
-										</button>
-									</p>
-									<div class="collapse" id="collapseExample5">
-										<div class="card card-body">
-											Abrange todas as áreas da contabilidade, atendendo desde pessoas
-											físicas até os mais altos níveis fiscais de pessoa jurídica.
-											<a type="button" class="btn btn-secondary mt-1" href="#contato"
-												>Contate-nos</a
-											>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-			<!--fim Serviços-->
-			<!--Contato-->
-			<div class="card mt-5" id="contato" style="max-width: 1200px; margin: auto;">
-				<div class="card-header"><h3>Contato<h3></div>
-				<div class="card-body">
-					<h6 class="card-title text-center mb-5 mt-3">
-						Não achou o que precisa? Envie suas dúvidas abaixo, informando seu melhor
-						email para receber nossa reposta:
-					</h6>
-					<div class="card align-items-center">
-						<!-- Button trigger modal -->
-						<button
-							type="button"
-							class="btn btn-primary"
-							data-bs-toggle="modal"
-							data-bs-target="#exampleModal"
-						>
-							Clique aqui para entrar em contato conosco
-						</button>
-						<!-- Modal -->
-						<div
-							class="modal fade"
-							id="exampleModal"
-							tabindex="-1"
-							aria-labelledby="exampleModalLabel"
-							aria-hidden="true"
-						>
-							<div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
-								<div class="modal-content">
-									<div class="modal-header">
-										<h1 class="modal-title fs-5" id="exampleModalLabel">
-											Verifique os dados abaixo:
-										</h1>
-										<button
-											type="button"
-											class="btn-close"
-											data-bs-dismiss="modal"
-											aria-label="Close"
-										></button>
-									</div>
-									<div class="modal-body">
-										<iframe
-											src="https://docs.google.com/forms/d/e/1FAIpQLSdu2GkoL8tf8p5sz7omBn62e-c3et_rfUeKvNYlQ46f8CRIKA/viewform?embedded=true"
-											width="100%"
-											height="900px"
-											frameborder="0"
-											marginheight="0"
-											marginwidth="0"
-											>Carregando…
-										</iframe>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-					<h3 class="card-text text-center mt-5" style="color: rgb(61, 143, 45)">
-						<strong>
-							Clique no botão do Whatsapp a qualquer momento, você será direcionando
-							para um atendimento direto e exclusivo. Fique avontade e aproveite!
-						</strong>
-					</h3>
-				</div>
-				<h6 class="card-text text-center mt-5 mb-3">
-					A melhor localização da cidade! Confira abaixo...
-					<br><br>
-					<a href="https://goo.gl/maps/jSh3CFHNXdGnkek9A" target="_blank">
-						<iframe
-							src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3984.0280641152444!2d-59.9851210330658!3d-3.0871838816531083!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x926c1adc275cf45f%3A0xbecd373196fd06af!2sArcanjoContabilidade!5e0!3m2!1spt-BR!2sbr!4v1672603106600!5m2!1spt-BR!2sbr"
-							width="95%"
-							height="450"
-							style="border: 0"
-							allowfullscreen=""
-							loading="lazy"
-							referrerpolicy="no-referrer-when-downgrade"
-						></iframe>
-					</a>
-				</h6>
-			</div>
-		</div>
-		<!--fim contato-->
-		<!--rodapé-->
-		<a id="linkWhatsapp" href="https://wa.me/5592991385029" target="_blank">
-			<i style="margin-top: 16px" class="fa fa-whatsapp"></i>
-		</a>
-		<footer>
-			<div class="container text-center">
-				<div class="row align-items-start">
-					<div class="col">
-						<a class="button" data-bs-toggle="modal" data-bs-target="#modalCreditos">
-							<small>Créditos</small>
-						</a>
-						<!--link p teste
-						<button>
-							<a href="teste.html">teste</a>
-						</button-->
-						<!-- Modal -->
-						<div
-							class="modal fade"
-							id="modalCreditos"
-							tabindex="-1"
-							aria-labelledby="modalLabelCreditos"
-							aria-hidden="true"
-							style="color: #22354f"
-						>
-							<div class="modal-dialog">
-								<div class="modal-content">
-									<div class="modal-header">
-										<h1 class="modal-title fs-5" id="modalLabelCreditos">Créditos:</h1>
-										<button
-											type="button"
-											class="btn-close"
-											data-bs-dismiss="modal"
-											aria-label="Close"
-										></button>
-									</div>
-									<div class="modal-body">
-										Desenvolvido por:
-										<a href="https://danielribeiro.dev.br" target="_blank"
-											><big>danielribeiro.dev.br</big></a
-										>
-										<br />
-										<a
-											href="https://www.linkedin.com/in/daniel-antunes-ribeiro/"
-											target="_blank"
-											>Linkedin</a
-										>
-										<br />
-										<a
-											href="https://github.com/dielito2010/arcanjo.github.io"
-											target="_blank"
-											>Repositório do site</a
-										>
-										<br />
-										Referência de imagens usadas no site:
-										<br />
-										<a
-											href="https://br.freepik.com/vetores-gratis/somos-ilustracao-de-conceito-aberto_33467353.htm#query=abertura%20de%20empresa&position=46&from_view=search&track=ais"
-											target="_blank"
-											>Imagem de storyset</a
-										>no Freepik <br />
-										<a
-											href="https://br.freepik.com/vetores-gratis/agente-de-recrutamento-analisando-candidatos_6976378.htm#query=departamento%20pessoal&position=1&from_view=search&track=sph"
-											target="_blank"
-											>Imagem de pch.vector</a
-										>no Freepik <br />
-										<a
-											href="https://br.freepik.com/vetores-gratis/conceito-de-pagamento-de-imposto_5596797.htm#query=tributos&position=21&from_view=search&track=sph"
-											target="_blank"
-											>Imagem de gstudioimagen</a
-										>no Freepik <br />
-										<a
-											href="https://br.freepik.com/vetores-gratis/ilustracao-do-conceito-de-assinatura-de-um-contrato_12325319.htm#query=escritura&position=12&from_view=search&track=sph"
-											target="_blank"
-											>Imagem de storyset</a
-										>no Freepik <br />
-										<a
-											href="https://br.freepik.com/vetores-gratis/pessoas-com-um-cheque-e-uma-caneta_3530043.htm#query=holerite&position=44&from_view=search&track=sph"
-											target="_blank"
-											>Imagem de rawpixel.com</a
-										>no Freepik <br />
-										<a
-											href="https://br.freepik.com/vetores-gratis/trabalho-em-equipe-brainstorming-sucesso-ganhando-profissionais-equipe-forca-de-trabalho-corporativa-departamento-de-empresa-cooperacao-pessoal-ilustracao-de-design-plano-de-conceito-de-lideranca_7057389.htm#query=departamento%20pessoal&position=42&from_view=search&track=sph"
-											target="_blank"
-											>Imagem de sentavio</a
-										>no Freepik <br />
-										<a
-											href="https://br.freepik.com/fotos-gratis/analista-de-cooperacao-grafico-economia-de-papel-profissional_1203367.htm#query=contabilidade&position=0&from_view=search&track=sph"
-											target="_blank"
-											>Imagem de mindandi</a
-										>no Freepik <br />
-										<a
-											href="https://br.freepik.com/fotos-gratis/empresarios-que-trabalham-em-financas-e-contabilidade-analisar-financas_16068554.htm#query=contabilidade&position=2&from_view=search&track=sph"
-											target="_blank"
-											>Imagem de our-team</a
-										>
-										no Freepik
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="col">
-						<dl>
-							<dt>Endereço:</dt>
-							<dd>
-								<a href="https://goo.gl/maps/jSh3CFHNXdGnkek9A" target="_blank">
-									R. Ouro Preto, 66 - Coroado
-								</a>
-							</dd>
-							<dd>Manaus - AM</dd>
-							<dd>69067-521</dd>
-						</dl>
-					</div>
-					<div class="col">
-						<dl class="text-end">
-							<dt>Telefones:</dt>
-							<dd>(92) 36391796</dd>
-							<dd>(92) 991385029</dd>
-						</dl>
-					</div>
-				</div>
-			</div>
-			<br />
-			2023 ~ Escritório Arcanjo Contabilidade
-		</footer>
-	</body>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>Arcanjo Contabilidade</title>
+        <!-- Favicon-->
+        <link rel="icon" type="image/x-icon" href="assets/contabilidade.svg" />
+        <!-- Font Awesome icons (free version)-->
+        <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
+        <!-- Google fonts-->
+        <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css" />
+        <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700" rel="stylesheet" type="text/css" />
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="css/styles.css" rel="stylesheet" />
+    </head>
+    <body id="page-top">
+        <!-- Navigation-->
+        <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
+            <div class="container">
+                <a class="navbar-brand" href="#page-top">
+                    <img src="assets/img/navbar-logo.png" 
+                    alt="..." 
+                    class="img-navbar-logo" />
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                    Menu
+                    <i class="fas fa-bars ms-1"></i>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarResponsive">
+                    <ul class="navbar-nav text-uppercase ms-auto py-4 py-lg-0">
+                        <li class="nav-item"><a class="nav-link" href="#services">quem somos</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#portfolio">serviços</a></li>
+                        <!--li class="nav-item"><a class="nav-link" href="#about">About</a></li-->
+                        <li class="nav-item"><a class="nav-link" href="#team">clientes</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#contact">contato</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- Masthead-->
+        <header class="masthead">
+            <div class="container">
+                <div class="masthead-subheading"></div>
+                <br><br><br><br><br>
+                <div class="masthead-heading text-uppercase"></div>
+                <!--a class="btn btn-primary btn-xl text-uppercase" href="#services">Tell Me More</a-->
+            </div>
+        </header>
+        <!-- Services-->
+        <section class="page-section" id="services">
+            <div class="container">
+                <div class="text-center">
+                    <h2 class="section-heading text-uppercase">bem vindo(a)!</h2>
+                    <h3 class="section-subheading text-muted">Esse é o site oficial do escritório Arcanjo Contabilidade...</h3>
+                </div>
+                <div class="row text-center">
+                    <div class="col-md-4">
+                        <span class="fa-stack fa-4x">
+                            <i class="fas fa-circle fa-stack-2x text-primary"></i>
+                            <i class="fas fa-play fa-stack-1x fa-inverse"></i>
+                        </span>
+                        <h4 class="my-3">Nossa história</h4>
+                        <p class="text-muted">
+                            Contamos com mais de 18 anos de mercado, atuando no seguimento contábil aqui na capital Manaus e em cidades do interior do estado do Amazonas.
+                            Partilhamos todas nossas conquistas com nossos clientes, parceiros e colaboradores e juntos formamos a excelência em serviços contábeis.
+                        </p>
+                    </div>
+                    <div class="col-md-4">
+                        <span class="fa-stack fa-4x">
+                            <i class="fas fa-circle fa-stack-2x text-primary"></i>
+                            <i class="fas fa-flag-checkered fa-stack-1x fa-inverse"></i>
+                        </span>
+                        <h4 class="my-3">Nosso propósito</h4>
+                        <p class="text-muted">
+                            Nossa equipe está pronta para oferecer as ferramentas necessárias para auxiliar sua empresa em seu crescimento financeiro, tributário e fiscal.
+                            Temos orgulho da nossa sólida experiência, e também orgulho de ter fidelizado grandes parcerias, venha fazer parte desse sucesso e somar conosco.
+                        </p>
+                    </div>
+                    <div class="col-md-4">
+                        <span class="fa-stack fa-4x">
+                            <i class="fas fa-circle fa-stack-2x text-primary"></i>
+                            <i class="fas fa-hourglass-start fa-stack-1x fa-inverse"></i>
+                        </span>
+                        <h4 class="my-3">Nosso legado</h4>
+                        <p class="text-muted">
+                            Acreditamos no valor dos relacionamentos duradouros, construídos com base no respeito e na confiança mútua. Por essa razão, agradecemos a confiança em nossa equipe!
+                            Ficamos melhores a cada dia no que fazemos graças à qualidade dos serviços prestados. É um prazer colaborar com nossos parceiros.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Portfolio Grid-->
+        <section class="page-section bg-light" id="portfolio">
+            <div class="container">
+                <div class="text-center">
+                    <h2 class="section-heading text-uppercase">nossos serviços</h2>
+                    <h3 class="section-subheading text-muted">Conheça os principais serviços oferecidos pelo escritório...</h3>
+                </div>
+                <div class="row">
+                    <div class="col-lg-4 col-sm-6 mb-4">
+                        <!-- Portfolio item 1-->
+                        <div class="portfolio-item">
+                            <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal1">
+                                <div class="portfolio-hover">
+                                    <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
+                                </div>
+                                <img 
+                                    class="img-fluid" 
+                                    src="assets/img/portfolio/abertura.jpg" 
+                                    alt="..."
+                                    style="width: 300px; height: 300px;"
+                                    />
+                            </a>
+                            <div class="portfolio-caption">
+                                <div class="portfolio-caption-heading">CNPJ</div>
+                                <div class="portfolio-caption-subheading text-muted">Abertura e baixa de empresa</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-sm-6 mb-4">
+                        <!-- Portfolio item 2-->
+                        <div class="portfolio-item">
+                            <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal2">
+                                <div class="portfolio-hover">
+                                    <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
+                                </div>
+                                <img 
+                                    class="img-fluid" 
+                                    src="assets/img/portfolio/departPessoal.jpg" 
+                                    alt="..."
+                                    style="width: 300px; height: 300px;"
+                                    />
+                            </a>
+                            <div class="portfolio-caption">
+                                <div class="portfolio-caption-heading">DP</div>
+                                <div class="portfolio-caption-subheading text-muted">Departamento pessoal</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-sm-6 mb-4">
+                        <!-- Portfolio item 3-->
+                        <div class="portfolio-item">
+                            <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal3">
+                                <div class="portfolio-hover">
+                                    <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
+                                </div>
+                                <img 
+                                    class="img-fluid"
+                                    src="assets/img/portfolio/escritura.jpg"
+                                    alt="..."
+                                    style="width: 300px; height: 300px;"
+                                    />
+                            </a>
+                            <div class="portfolio-caption">
+                                <div class="portfolio-caption-heading">Fiscal</div>
+                                <div class="portfolio-caption-subheading text-muted">Escrituração fiscal</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-sm-6 mb-4 mb-lg-0">
+                        <!-- Portfolio item 4-->
+                        <div class="portfolio-item">
+                            <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal4">
+                                <div class="portfolio-hover">
+                                    <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
+                                </div>
+                                <img 
+                                    class="img-fluid"
+                                    src="assets/img/portfolio/tributos.jpg"
+                                    alt="..."
+                                    style="width: 300px; height: 300px;"
+                                    />
+                            </a>
+                            <div class="portfolio-caption">
+                                <div class="portfolio-caption-heading">Tributos</div>
+                                <div class="portfolio-caption-subheading text-muted">Acessoria tributária</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-sm-6 mb-4 mb-sm-0">
+                        <!-- Portfolio item 5-->
+                        <div class="portfolio-item">
+                            <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal5">
+                                <div class="portfolio-hover">
+                                    <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
+                                </div>
+                                <img 
+                                    class="img-fluid"
+                                    src="assets/img/portfolio/holerite.jpg"
+                                    alt="..."
+                                    style="width: 300px; height: 300px;"
+                                    />
+                            </a>
+                            <div class="portfolio-caption">
+                                <div class="portfolio-caption-heading">Holerite</div>
+                                <div class="portfolio-caption-subheading text-muted">Folha de pagamento</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-sm-6">
+                        <!-- Portfolio item 6-->
+                        <div class="portfolio-item">
+                            <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal6">
+                                <div class="portfolio-hover">
+                                    <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
+                                </div>
+                                <img 
+                                    class="img-fluid"
+                                    src="assets/img/portfolio/contabilidade.jpg"
+                                    alt="..."
+                                    style="width: 300px; height: 300px;"
+                                    />
+                            </a>
+                            <div class="portfolio-caption">
+                                <div class="portfolio-caption-heading">Contabilidade</div>
+                                <div class="portfolio-caption-subheading text-muted">Acessoria completa</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- About>
+        <section class="page-section" id="about">
+            <div class="container">
+                <div class="text-center">
+                    <h2 class="section-heading text-uppercase">About</h2>
+                    <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
+                </div>
+                <ul class="timeline">
+                    <li>
+                        <div class="timeline-image"><img class="rounded-circle img-fluid" src="assets/img/about/1.jpg" alt="..." /></div>
+                        <div class="timeline-panel">
+                            <div class="timeline-heading">
+                                <h4>2009-2011</h4>
+                                <h4 class="subheading">Our Humble Beginnings</h4>
+                            </div>
+                            <div class="timeline-body"><p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!</p></div>
+                        </div>
+                    </li>
+                    <li class="timeline-inverted">
+                        <div class="timeline-image"><img class="rounded-circle img-fluid" src="assets/img/about/2.jpg" alt="..." /></div>
+                        <div class="timeline-panel">
+                            <div class="timeline-heading">
+                                <h4>March 2011</h4>
+                                <h4 class="subheading">An Agency is Born</h4>
+                            </div>
+                            <div class="timeline-body"><p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!</p></div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="timeline-image"><img class="rounded-circle img-fluid" src="assets/img/about/3.jpg" alt="..." /></div>
+                        <div class="timeline-panel">
+                            <div class="timeline-heading">
+                                <h4>December 2015</h4>
+                                <h4 class="subheading">Transition to Full Service</h4>
+                            </div>
+                            <div class="timeline-body"><p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!</p></div>
+                        </div>
+                    </li>
+                    <li class="timeline-inverted">
+                        <div class="timeline-image"><img class="rounded-circle img-fluid" src="assets/img/about/4.jpg" alt="..." /></div>
+                        <div class="timeline-panel">
+                            <div class="timeline-heading">
+                                <h4>July 2020</h4>
+                                <h4 class="subheading">Phase Two Expansion</h4>
+                            </div>
+                            <div class="timeline-body"><p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!</p></div>
+                        </div>
+                    </li>
+                    <li class="timeline-inverted">
+                        <div class="timeline-image">
+                            <h4>
+                                Be Part
+                                <br />
+                                Of Our
+                                <br />
+                                Story!
+                            </h4>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </section-->
+        <!-- Team-->
+        <section class="page-section bg-light" id="team">
+            <div class="container">
+                <!--div class="text-center">
+                    <h2 class="section-heading text-uppercase"></h2>
+                    <h3 class="section-subheading text-muted">
+                        Confira alguns de nossos clientes e parceiros, obrigado por estarem conosco!
+                    </h3>
+                </div-->
+                <div class="row">
+                    <p class="card-text text-center">
+                        Confira alguns de nossos clientes e parceiros, obrigado por estarem conosco!
+                        <br><br>
+                        <img src="assets/img/banner4.png" class="card-img" alt="...">
+                    </p>
+                    <!--div class="col-lg-4">
+                        <div class="team-member">
+                            <img class="mx-auto rounded-circle" src="assets/img/team/1.jpg" alt="..." />
+                            <h4>Parveen Anand</h4>
+                            <p class="text-muted">Lead Designer</p>
+                            <a class="btn btn-dark btn-social mx-2" href="#!" aria-label="Parveen Anand Twitter Profile"><i class="fab fa-twitter"></i></a>
+                            <a class="btn btn-dark btn-social mx-2" href="#!" aria-label="Parveen Anand Facebook Profile"><i class="fab fa-facebook-f"></i></a>
+                            <a class="btn btn-dark btn-social mx-2" href="#!" aria-label="Parveen Anand LinkedIn Profile"><i class="fab fa-linkedin-in"></i></a>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="team-member">
+                            <img class="mx-auto rounded-circle" src="assets/img/team/2.jpg" alt="..." />
+                            <h4>Diana Petersen</h4>
+                            <p class="text-muted">Lead Marketer</p>
+                            <a class="btn btn-dark btn-social mx-2" href="#!" aria-label="Diana Petersen Twitter Profile"><i class="fab fa-twitter"></i></a>
+                            <a class="btn btn-dark btn-social mx-2" href="#!" aria-label="Diana Petersen Facebook Profile"><i class="fab fa-facebook-f"></i></a>
+                            <a class="btn btn-dark btn-social mx-2" href="#!" aria-label="Diana Petersen LinkedIn Profile"><i class="fab fa-linkedin-in"></i></a>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="team-member">
+                            <img class="mx-auto rounded-circle" src="assets/img/team/3.jpg" alt="..." />
+                            <h4>Larry Parker</h4>
+                            <p class="text-muted">Lead Developer</p>
+                            <a class="btn btn-dark btn-social mx-2" href="#!" aria-label="Larry Parker Twitter Profile"><i class="fab fa-twitter"></i></a>
+                            <a class="btn btn-dark btn-social mx-2" href="#!" aria-label="Larry Parker Facebook Profile"><i class="fab fa-facebook-f"></i></a>
+                            <a class="btn btn-dark btn-social mx-2" href="#!" aria-label="Larry Parker LinkedIn Profile"><i class="fab fa-linkedin-in"></i></a>
+                        </div>
+                    </div>
+                </div-->
+                <div class="row">
+                    <p class="card-text text-center mt-5">
+                        A melhor localização da cidade! Confira abaixo...
+                        <br><br>
+                        <a href="https://goo.gl/maps/jSh3CFHNXdGnkek9A" target="_blank">
+                            <iframe
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3984.0280641152444!2d-59.9851210330658!3d-3.0871838816531083!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x926c1adc275cf45f%3A0xbecd373196fd06af!2sArcanjoContabilidade!5e0!3m2!1spt-BR!2sbr!4v1672603106600!5m2!1spt-BR!2sbr"
+                                width="95%"
+                                height="450"
+                                style="border: 0"
+                                allowfullscreen=""
+                                loading="lazy"
+                                referrerpolicy="no-referrer-when-downgrade"
+                            ></iframe>
+                        </a>
+                    </p>
+                </div>
+            </div>
+        </section>
+        <!-- Clients-->
+        <!--div class="py-5">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-md-3 col-sm-6 my-3">
+                        <a href="#!"><img class="img-fluid img-brand d-block mx-auto" src="assets/img/logos/microsoft.svg" alt="..." aria-label="Microsoft Logo" /></a>
+                    </div>
+                    <div class="col-md-3 col-sm-6 my-3">
+                        <a href="#!"><img class="img-fluid img-brand d-block mx-auto" src="assets/img/logos/google.svg" alt="..." aria-label="Google Logo" /></a>
+                    </div>
+                    <div class="col-md-3 col-sm-6 my-3">
+                        <a href="#!"><img class="img-fluid img-brand d-block mx-auto" src="assets/img/logos/facebook.svg" alt="..." aria-label="Facebook Logo" /></a>
+                    </div>
+                    <div class="col-md-3 col-sm-6 my-3">
+                        <a href="#!"><img class="img-fluid img-brand d-block mx-auto" src="assets/img/logos/ibm.svg" alt="..." aria-label="IBM Logo" /></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Contact-->
+        <section class="page-section" id="contact">
+            <div class="container">
+                <div class="text-center">
+                    <h2 class="section-heading text-uppercase">Contato</h2>
+                    <h3 class="section-subheading text-muted">Entre em contato conosco:</h3>
+                </div>
+                <!-- * * * * * * * * * * * * * * *-->
+                <!-- * * SB Forms Contact Form * *-->
+                <!-- * * * * * * * * * * * * * * *-->
+                <!-- This form is pre-integrated with SB Forms.-->
+                <!-- To make this form functional, sign up at-->
+                <!-- https://startbootstrap.com/solution/contact-forms-->
+                <!-- to get an API token!-->
+                <form id="contactForm" data-sb-form-api-token="API_TOKEN">
+                    <div class="row align-items-stretch mb-5">
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <!-- Name input-->
+                                <input class="form-control" id="name" type="text" placeholder="Nome *" data-sb-validations="required" />
+                                <div class="invalid-feedback" data-sb-feedback="name:required">Nome é obrigatório!</div>
+                            </div>
+                            <div class="form-group">
+                                <!-- Email address input-->
+                                <input class="form-control" id="email" type="email" placeholder="Email *" data-sb-validations="required,email" />
+                                <div class="invalid-feedback" data-sb-feedback="email:required">Email é obrigatório!</div>
+                                <div class="invalid-feedback" data-sb-feedback="email:email">Email é obrigatório!</div>
+                            </div>
+                            <div class="form-group mb-md-0">
+                                <!-- Phone number input-->
+                                <input class="form-control" id="phone" type="tel" placeholder="Celular *" data-sb-validations="required" />
+                                <div class="invalid-feedback" data-sb-feedback="phone:required">Celular é obrigatório!</div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-group form-group-textarea mb-md-0">
+                                <!-- Message input-->
+                                <textarea class="form-control" id="message" placeholder="Menssagem *" data-sb-validations="required"></textarea>
+                                <div class="invalid-feedback" data-sb-feedback="message:required">Menssagem é obrigatória!</div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Submit success message-->
+                    <!---->
+                    <!-- This is what your users will see when the form-->
+                    <!-- has successfully submitted-->
+                    <div class="d-none" id="submitSuccessMessage">
+                        <div class="text-center text-white mb-3">
+                            <div class="fw-bolder">Form submission successful!</div>
+                            To activate this form, sign up at
+                            <br />
+                            <a href="https://startbootstrap.com/solution/contact-forms">https://startbootstrap.com/solution/contact-forms</a>
+                        </div>
+                    </div>
+                    <!-- Submit error message-->
+                    <!---->
+                    <!-- This is what your users will see when there is-->
+                    <!-- an error submitting the form-->
+                    <div class="d-none" id="submitErrorMessage"><div class="text-center text-danger mb-3">Error sending message!</div></div>
+                    <!-- Submit Button-->
+                    <div class="text-center"><button class="btn btn-primary btn-xl text-uppercase disabled" id="submitButton" type="submit">Enviar</button></div>
+                </form>
+            </div>
+        </section>
+        <!-- Footer-->
+        <footer class="footer py-4">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-lg-4 text-lg-start">2024 ~ Arcanjo contabilidade</div>
+                    <div class="col-lg-4 my-3 my-lg-0">
+                        <a class="btn btn-dark btn-social mx-2" href="https://wa.me/5592991385029/" target="_blank" aria-label="Whatsapp"><i class="fab fa-whatsapp"></i></a>
+                        <a class="btn btn-dark btn-social mx-2" href="mailto:escritorio@arcanjo.cnt.br" target="_blank" aria-label="Email"><i class="fa-regular fa-envelope"></i></a>
+                        <a class="btn btn-dark btn-social mx-2" href="#!" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                    <div class="col-lg-4 text-lg-end">
+                        <a class="link-dark text-decoration-none me-3" href="#!">créditos</a>
+                        <a class="link-dark text-decoration-none" 
+                           href="https://danielribeiro.dev.br"
+                           target="_blank"
+                           >danielribeiro.dev.br
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- Portfolio Modals-->
+        <!-- Portfolio item 1 modal popup-->
+        <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="close-modal" data-bs-dismiss="modal"><img src="assets/img/close-icon.svg" alt="Close modal" /></div>
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-8">
+                                <div class="modal-body">
+                                    <!-- Project details-->
+                                    <h2 class="text-uppercase">CNPJ</h2>
+                                    <p class="item-intro text-muted">Abertura e baixa de empresas</p>
+                                    <img class="img-fluid d-block mx-auto" src="assets/img/portfolio/abertura.jpg" alt="..." />
+                                    <p>
+                                        Um grande desafio na hora de abrir e uma grande dor de cabeça na hora de pedir baixa, já estamos acostumados a essa rotina que exige uma equipe experiente para lidar com a burocracia.
+                                    </p>
+                                    <!--ul class="list-inline">
+                                        <li>
+                                            <strong>Client:</strong>
+                                            Threads
+                                        </li>
+                                        <li>
+                                            <strong>Category:</strong>
+                                            Illustration
+                                        </li>
+                                    </ul-->
+                                    <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal" type="button">
+                                        <i class="fas fa-xmark me-1"></i>
+                                        Outros serviços...
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Portfolio item 2 modal popup-->
+        <div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="close-modal" data-bs-dismiss="modal"><img src="assets/img/close-icon.svg" alt="Close modal" /></div>
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-8">
+                                <div class="modal-body">
+                                    <!-- Project details-->
+                                    <h2 class="text-uppercase">DP</h2>
+                                    <p class="item-intro text-muted">Departamento pessoal</p>
+                                    <img class="img-fluid d-block mx-auto" src="assets/img/portfolio/departPessoal.jpg" alt="..." />
+                                    <p>
+                                        Nenhuma empresa pode crescer e prosperar sem contar com um bom DP. Esta área é que garante que a companhia tenha um bom quadro de colaboradores, além de fazer com que eles sintam-se mais satisfeitos, o que no fim das contas, resulta em lucros para a empresa.
+                                    </p>
+                                    <!--ul class="list-inline">
+                                        <li>
+                                            <strong>Client:</strong>
+                                            Explore
+                                        </li>
+                                        <li>
+                                            <strong>Category:</strong>
+                                            Graphic Design
+                                        </li>
+                                    </ul-->
+                                    <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal" type="button">
+                                        <i class="fas fa-xmark me-1"></i>
+                                        Outros serviços...
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Portfolio item 3 modal popup-->
+        <div class="portfolio-modal modal fade" id="portfolioModal3" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="close-modal" data-bs-dismiss="modal"><img src="assets/img/close-icon.svg" alt="Close modal" /></div>
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-8">
+                                <div class="modal-body">
+                                    <!-- Project details-->
+                                    <h2 class="text-uppercase">Fiscal</h2>
+                                    <p class="item-intro text-muted">Escrituração fiscal</p>
+                                    <img class="img-fluid d-block mx-auto" src="assets/img/portfolio/escritura.jpg" alt="..." />
+                                    <p>
+                                        Na contabilidade de uma empresa, a escrituração fiscal é fundamental para a execução da legislação tributária. Sua correta execução permite um crescimento no resultado econômico da organização como um todo.
+                                    </p>
+                                    <!--ul class="list-inline">
+                                        <li>
+                                            <strong>Client:</strong>
+                                            Outros serviços...
+                                        </li>
+                                        <li>
+                                            <strong>Category:</strong>
+                                            Identity
+                                        </li-->
+                                    </ul>
+                                    <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal" type="button">
+                                        <i class="fas fa-xmark me-1"></i>
+                                        outros serviços...
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Portfolio item 4 modal popup-->
+        <div class="portfolio-modal modal fade" id="portfolioModal4" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="close-modal" data-bs-dismiss="modal"><img src="assets/img/close-icon.svg" alt="Close modal" /></div>
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-8">
+                                <div class="modal-body">
+                                    <!-- Project details-->
+                                    <h2 class="text-uppercase">Tributos</h2>
+                                    <p class="item-intro text-muted">Acessoria tributária</p>
+                                    <img class="img-fluid d-block mx-auto" src="assets/img/portfolio/tributos.jpg" alt="..." />
+                                    <p>
+                                        Área que mais exige de uma equipe experiente para atuar de acordo com as legislações vigentes nos órgãos competentes e com a responsabilidade fiscal que a sua empresa ou departamento necessitam.
+                                    </p>
+                                    <!--ul class="list-inline">
+                                        <li>
+                                            <strong>Client:</strong>
+                                            Lines
+                                        </li>
+                                        <li>
+                                            <strong>Category:</strong>
+                                            Branding
+                                        </li-->
+                                    </ul>
+                                    <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal" type="button">
+                                        <i class="fas fa-xmark me-1"></i>
+                                        Outros serviços...
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Portfolio item 5 modal popup-->
+        <div class="portfolio-modal modal fade" id="portfolioModal5" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="close-modal" data-bs-dismiss="modal"><img src="assets/img/close-icon.svg" alt="Close modal" /></div>
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-8">
+                                <div class="modal-body">
+                                    <!-- Project details-->
+                                    <h2 class="text-uppercase">Holerite</h2>
+                                    <p class="item-intro text-muted">Folha de pagamento</p>
+                                    <img class="img-fluid d-block mx-auto" src="assets/img/portfolio/holerite.jpg" alt="..." />
+                                    <p>
+                                        Lista mensal, semanal ou diária da remuneração paga aos colaboradores de uma instituição, também conhecido atigamente como holerite.
+                                    </p>
+                                    <!--ul class="list-inline">
+                                        <li>
+                                            <strong>Client:</strong>
+                                            Southwest
+                                        </li>
+                                        <li>
+                                            <strong>Category:</strong>
+                                            Website Design
+                                        </li-->
+                                    </ul>
+                                    <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal" type="button">
+                                        <i class="fas fa-xmark me-1"></i>
+                                        outros serviços...
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Portfolio item 6 modal popup-->
+        <div class="portfolio-modal modal fade" id="portfolioModal6" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="close-modal" data-bs-dismiss="modal"><img src="assets/img/close-icon.svg" alt="Close modal" /></div>
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-8">
+                                <div class="modal-body">
+                                    <!-- Project details-->
+                                    <h2 class="text-uppercase">Contabilidade</h2>
+                                    <p class="item-intro text-muted">Contabilidade em geral</p>
+                                    <img class="img-fluid d-block mx-auto" src="assets/img/portfolio/contabilidade.jpg" alt="..." />
+                                    <p>
+                                        Abrange todas as áreas da contabilidade, atendendo desde pessoas físicas até os mais altos níveis fiscais de pessoa jurídica.
+                                    </p>
+                                    <!--ul class="list-inline">
+                                        <li>
+                                            <strong>Client:</strong>
+                                            Window
+                                        </li>
+                                        <li>
+                                            <strong>Category:</strong>
+                                            Photography
+                                        </li-->
+                                    </ul>
+                                    <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal" type="button">
+                                        <i class="fas fa-xmark me-1"></i>
+                                        outros serviços...
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Bootstrap core JS-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Core theme JS-->
+        <script src="js/scripts.js"></script>
+        <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
+        <!-- * *                               SB Forms JS                               * *-->
+        <!-- * * Activate your form at https://startbootstrap.com/solution/contact-forms * *-->
+        <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
+        <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
+    </body>
 </html>
